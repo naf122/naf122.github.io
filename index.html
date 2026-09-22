@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nicole Filatova Portfolio</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        nav {
+            background-color: #cc0033;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        header {
+            background-color: white;
+            padding: 60px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .intro {
+            max-width: 600px;
+        }
+
+        .intro h1 {
+            font-size: 48px;
+            margin-bottom: 5px;
+        }
+
+        .intro h2 {
+            color: #cc0033;
+            margin-top: 0;
+        }
+
+        .intro p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .headshot {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 5px solid #cc0033;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+        }
+
+        #projects {
+            background-color: white;
+        }
+
+        .projects {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            background-color: #f5f5f5;
+            width: 400px;
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 5px solid #cc0033;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .project h3 {
+            color: #cc0033;
+        }
+
+        #contact {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 800px) {
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .headshot {
+                width: 250px;
+            }
+
+            .intro h1 {
+                font-size: 38px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<nav>
+
+    <h2>Nicole Filatova | Rutgers Business School</h2>
+
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+
+</nav>
+
+
+<header id="home">
+
+    <div class="intro">
+
+        <h1>Nicole Filatova</h1>
+
+        <h2>Accounting Student | Aspiring Audit Professional</h2>
+
+        <p>
+            I am a sophomore accounting student at Rutgers Business School
+            with experience in financial analysis and customer service,
+            seeking opportunities to develop my skills in audit.
+        </p>
+
+    </div>
+
+
+    <img
+        class="headshot"
+        src="Profile_Picture.jpg"
+        alt="Nicole Filatova"
+    >
+
+</header>
+
+
+
+<section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">Financial Accounting</div>
+
+        <div class="skill">Managerial Accounting</div>
+
+        <div class="skill">Intermediate Accounting</div>
+
+        <div class="skill">Risk Assessment</div>
+
+        <div class="skill">Financial Data Analysis</div>
+
+        <div class="skill">Microsoft Excel</div>
+
+        <div class="skill">Organization & Record Management</div>
+
+        <div class="skill">Professional Communication</div>
+
+        <div class="skill">Customer Service</div>
+
+        <div class="skill">Team Collaboration</div>
+
+        <div class="skill">Conversational Russian</div>
+
+    </div>
+
+</section>
+
+
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+
+        <div class="project">
+
+            <h3>Goldman Sachs Internal Audit Job Simulation</h3>
+
+            <p>
+                Completed a virtual internal audit simulation focused on
+                banking and financial risks. Reviewed trading, credit risk,
+                and anti-money-laundering information, analyzed key
+                performance indicators and compliance metrics, and
+                summarized findings to support audit recommendations.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>Management Skills Business Analysis Project</h3>
+
+            <p>
+                Worked with a group to identify a problem within a business
+                and develop a practical solution. Conducted interviews and
+                surveys to gather feedback, analyzed the results, and used
+                the findings to recommend improvements. Collaborated with
+                team members throughout the research, analysis, and
+                presentation process.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <p>
+        Email:
+        <a href="mailto:Nicoleafilatova@gmail.com">
+            Nicoleafilatova@gmail.com
+        </a>
+    </p>
+
+    <p>Rutgers Business School</p>
+
+</section>
+
+
+
+<footer>
+
+    <p>© 2026 Nicole Filatova</p>
+
+</footer>
+
+
+</body>
+
+</html>
