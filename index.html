@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nicole Filatova | Accounting Portfolio</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            color: #222222;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background-color: #ffffff;
+            border-bottom: 3px solid #cc0033;
+            padding: 18px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 22px;
+        }
+
+        nav h2 span {
+            color: #cc0033;
+        }
+
+        nav a {
+            color: #222222;
+            text-decoration: none;
+            margin-left: 22px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #cc0033;
+        }
+
+
+        /* HERO SECTION */
+
+        .hero {
+            min-height: 600px;
+            background-color: #f7f7f7;
+            padding: 70px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .rbs {
+            color: #cc0033;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 8px;
+        }
+
+        .hero h3 {
+            font-size: 22px;
+            color: #666666;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+
+        /* HEADSHOT */
+
+        .headshot-container {
+            text-align: center;
+        }
+
+        .headshot {
+            width: 320px;
+            height: 420px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 18px;
+            border: 6px solid white;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+
+        /* GENERAL SECTIONS */
+
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 40px;
+        }
+
+        section h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #cc0033;
+            margin: 10px auto 0;
+        }
+
+
+        /* SKILLS */
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .skill {
+            background-color: #f5f5f5;
+            padding: 18px;
+            border-radius: 10px;
+            border-left: 5px solid #cc0033;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+
+        /* PROJECTS */
+
+        #projects {
+            background-color: #f7f7f7;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 32px;
+            border-radius: 14px;
+            border-top: 5px solid #cc0033;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #222222;
+        }
+
+        .project-card p {
+            color: #555555;
+        }
+
+
+        /* CONTACT */
+
+        #contact {
+            text-align: center;
+        }
+
+        #contact p {
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+
+        #contact a {
+            color: #cc0033;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background-color: #222222;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .headshot {
+                width: 270px;
+                height: 350px;
+            }
+
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <h2>
+        Nicole Filatova <span>| RBS</span>
+    </h2>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</nav>
+
+
+<!-- HOME -->
+
+<header class="hero" id="home">
+
+    <div class="hero-text">
+
+        <p class="rbs">
+            Rutgers Business School
+        </p>
+
+        <h1>
+            Nicole Filatova
+        </h1>
+
+        <h3>
+            Accounting Student | Aspiring Audit Professional
+        </h3>
+
+        <p>
+            I am a sophomore accounting student at Rutgers Business School
+            with experience in financial analysis and customer service,
+            seeking opportunities to develop my skills in audit.
+        </p>
+
+    </div>
+
+
+    <div class="headshot-container">
+
+        <img
+            src="headshot.jpg"
+            alt="Nicole Filatova"
+            class="headshot"
+        >
+
+    </div>
+
+</header>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill">
+            Financial Accounting
+        </div>
+
+        <div class="skill">
+            Managerial Accounting
+        </div>
+
+        <div class="skill">
+            Intermediate Accounting
+        </div>
+
+        <div class="skill">
+            Risk Assessment
+        </div>
+
+        <div class="skill">
+            Financial Data Analysis
+        </div>
+
+        <div class="skill">
+            Microsoft Excel
+        </div>
+
+        <div class="skill">
+            Organization &amp; Record Management
+        </div>
+
+        <div class="skill">
+            Professional Communication
+        </div>
+
+        <div class="skill">
+            Customer Service
+        </div>
+
+        <div class="skill">
+            Team Collaboration
+        </div>
+
+        <div class="skill">
+            Conversational Russian
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+
+        <div class="project-card">
+
+            <h3>
+                Goldman Sachs Internal Audit Job Simulation
+            </h3>
+
+            <p>
+                Completed a virtual internal audit simulation focused on banking
+                and financial risks. Reviewed trading, credit risk, and
+                anti-money-laundering information, analyzed key performance
+                indicators and compliance metrics, and summarized findings to
+                support audit recommendations.
+            </p>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>
+                Management Skills Business Analysis Project
+            </h3>
+
+            <p>
+                Worked with a group to identify a problem within a business and
+                develop a practical solution. Conducted interviews and surveys
+                to gather feedback, analyzed the results, and used the findings
+                to recommend improvements. Collaborated with team members
+                throughout the research, analysis, and presentation process.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <p>
+        Email:
+        <a href="mailto:Nicoleafilatova@gmail.com">
+            Nicoleafilatova@gmail.com
+        </a>
+    </p>
+
+    <p>
+        Rutgers Business School
+    </p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Nicole Filatova | Rutgers Business School
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
